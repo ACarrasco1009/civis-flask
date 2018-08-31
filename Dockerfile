@@ -2,7 +2,7 @@ FROM continuumio/miniconda3:latest
 
 LABEL maintainer="Alec Carrasco"
 
-RUN pip install flask
+RUN pip install -r requirements.txt
 
 COPY src /src/
 
